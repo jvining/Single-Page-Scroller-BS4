@@ -1,0 +1,119 @@
+/*
+Theme Name: Single Page Scroller 
+Theme URI: https://jvining.github.io/single-page-scroller-v4
+Author: Joshua Vining
+Author URI: https://github.com/jvining
+Description: A single page scrolling web site with 
+Version: 2.0
+Texture Credit: https://www.transparenttextures.com/
+*/
+
+body{background:#fbfbfb; padding-top:5em; font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
+   
+/* Typography */
+body h1, body h2, body h3, body h4, body h5 {color:#464646; font-family:'Roboto Slab', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'!important;}
+#content-container .container p, #content-container .container ul, #content-container .container ol, #content-container .container li, #content-container .container table, #content-container .container address, #content-container .container blockquote, #content-container .container cite{color:#5f5f5f; font-size:16px; line-height:1.75em; font-weight:400; font-family:'Open Sans','Helvetica Neue','Helvetica','Arial','sans-serif'!important;}
+#content-container .container p{margin-bottom:1.25em;}
+#content-container .container a{color:#a2c046; font-weight:bold;}
+#content-container .container a:hover, a:focus{color:#3a3a3a;}
+
+/* Typography Utility Classes */
+.fa-lg,.fa-1x,.fa-2x,.fa-3x,.fa-4x,.fa-5x,.fa-6x,.fa-7x,.fa-8x,.fa-9x,.fa-10x{line-height:1.25em!important;} .fa-lg{font-size:1.33333333em!important;} .fa-1x{font-size:1.5em!important;} .fa-2x{font-size:2em!important;} .fa-3x{font-size:3em!important;}.fa-4x{font-size:4em!important;}.fa-5x{font-size:5em!important;}.fa-6x{font-size:6em!important;}.fa-7x{font-size:7em!important;}.fa-8x{font-size:8em!important;}.fa-9x{font-size:9em!important;}.fa-10x{font-size:10em!important;}
+.fa-stack.fa-lg,.fa-stack.fa-1x,.fa-stack.fa-2x,.fa-stack.fa-3x,.fa-stack.fa-4x,.fa-stack.fa-5x,.fa-stack.fa-6x,.fa-stack.fa-7x,.fa-stack.fa-8x,.fa-stack.fa-9x,.fa-stack.fa-10x {line-height:2em!important;}
+ 
+.text-light {font-weight:300!important;}
+.text-normal{font-weight:400!important;}
+.text-bold {font-weight:700!important;}
+.text-shadow{text-shadow: rgba( 0, 0, 0, .25 ) .045em .045em!important;}
+.small{font-size:75%!important;}
+
+.text-grey-lt {color:#afafaf!important;}
+.text-grey {color:#5f5f5f!important;}
+.text-grey-dk {color:#464646!important;}
+
+.text-green{color:#a2c046!important;}
+
+/* Forms */
+#content-container .container label{color:#5f5f5f; font-family:'Roboto Slab', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'!important;}
+#content-container .container textarea:focus,#content-container .container input[type="text"]:focus,#content-container .container input[type="password"]:focus,#content-container .container input[type="datetime"]:focus,#content-container .container input[type="datetime-local"]:focus,#content-container .container input[type="date"]:focus,#content-container .container input[type="month"]:focus,#content-container .container input[type="time"]:focus,#content-container .container input[type="week"]:focus,#content-container .container input[type="number"]:focus,#content-container .container input[type="email"]:focus,#content-container .container input[type="url"]:focus,#content-container .container input[type="search"]:focus,#content-container .container input[type="tel"]:focus,#content-container .container input[type="phone"]:focus,#content-container .container input[type="color"]:focus,#content-container .container .uneditable-input:focus {border-color: rgba(162, 192, 70, .8); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(162, 192, 70, .8); outline: 0 none;}
+
+/* Buttons */
+.btn{color:#fff!important;}
+.btn-site{color:#fff!important; background:#a2c046; border:#88a235; text-shadow: rgba( 0, 0, 0, .25 ) .045em .045em!important; font-family:'Roboto Slab', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'!important;}
+.btn-site:hover{background:#88a235; border:#a2c046;}
+.btn-xl{padding: .5em .85em!important;font-size:1.5em!important;}
+@media(max-width:450px){.btn-xl,.btn-lg,.btn-md,.btn-sm,.btn-xs{font-size:1em!important;}}
+
+/* Hero Image Section */
+.jumbotron{background: url(https://picsum.photos/1500/650/?random) center center no-repeat #ddd; box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .4); margin-top:3em; height:70vh; min-height:450px; margin-bottom:0px;  background-size:cover;}
+@media(max-width:768px){.jumbotron h1{font-size:2em!important;} .jumbotron p{font-size:1em!important;}}
+
+/* Navigation */
+body .container-button {background:#3a3a3a; border:none; height:3.5em; position:fixed!important; top:0; z-index:1030; width:100%;}
+body .container-button li {color:#afafaf; font-size:1em; font-family:'Roboto Slab', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'!important;}
+body .container-button li a {color:#afafaf; }
+body .container-button li a:hover {text-decoration:none;}
+body .container-button li:after {color:#5f5f5f; margin:.5em; content:"/";  font-family:'Roboto Slab', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'!important;}
+body .container-button li:last-child:after {content:none;}
+body .container-button li i {font-size:1.3em; margin-right:.25em;}
+body nav.navbar .navbar-collapse {box-shadow: none!important; border-color:none!important; border:none!important;}
+@media(max-width:760px){body .container-button li:nth-child(2):after {content:none;}}
+
+/* Primary Navigation */
+body .navbar {background:#a2c046!important; border-bottom:#3a3a3a 5px solid; box-shadow:0 10px 25px 2px rgba(0, 0, 0, 0.3); top:3.5em; position:fixed!important; height:5em;}
+
+body .navbar .navbar-brand img{border:3px #3a3a3a solid; box-shadow: 5px 5px 50px #333;}
+@media(max-width:990px){body .navbar {height:auto;} body .navbar .navbar-brand {align-self: flex-start;} body .navbar .navbar-brand img {position: absolute; max-height: 100px; object-fit: contain;} body .navbar .navbar-collapse.collapse.show, body .navbar .navbar-collapse.collapsing{margin-top:5em;} body .jumbotron{margin-top:1em;}}
+
+body .navbar .navbar-nav > li > a {font-size:1.1em; color:#fff!important; font-weight:700; text-shadow: rgba( 0, 0, 0, .25 ) .045em .045em!important; font-family:"Roboto Slab", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"!important; }
+body .navbar .navbar-nav > li > a:hover {color:#3a3a3a!important; cursor:pointer;}
+
+body .navbar .navbar-nav > li{margin-left:1.5em;}
+body .navbar .navbar-nav > li:after{content:"\2022"; font-size:2em; color:#fff; text-shadow: rgba( 0, 0, 0, .25 ) .045em .045em!important; position:absolute; margin-top:-1.45em; margin-left:-.5em; }
+body .navbar .navbar-nav > li:first-child:after{content:none;}
+@media(max-width:768px){body .navbar .navbar-nav > li:after{content:none;}}
+
+/* Section: Discount Module */
+#content-discount{background: url("img/natural-paper.png") #a2c046!important; border-color:#3a3a3a; border-width:5px 0; border-style:solid;}
+
+/* Section: Testimonial Carousel */
+#content-testimonials {height:50vh; min-height:550px;  background: url("img/asfalt-light.png") repeat #464646;}
+
+#content-testimonials blockquote{font-family:'Roboto Slab', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'!important;}
+#content-testimonials blockquote p {font-size:3em;}
+#content-testimonials cite:before{content:"- ";}
+#content-testimonials cite{color:#a2c046!important; font-weight:bold!important;}
+
+#content-testimonials .carousel-indicators {bottom:-150px;}
+#content-testimonials .carousel-indicators li {width:150px; height:150px; margin-right:1em; margin-left:1em; text-indent:0px; background-color:transparent;}
+#content-testimonials .carousel-indicators li img{height:70%;opacity:.35;transition:all .4s ease-in;}
+#content-testimonials .carousel-indicators li.active img{height: 90%;opacity:1;transition:all .4s ease-in;}
+@media(max-width:1100px){#content-testimonials blockquote p {font-size:1.75em;} #content-testimonials .carousel-indicators {bottom:-200px;} #content-testimonials .carousel-indicators li img{height:70%;} #content-testimonials .carousel-indicators li.active img{height:70%;}}
+@media(max-width:550px){#content-testimonials {min-height:450px;} #content-testimonials blockquote p {font-size:1.25em;} #content-testimonials .carousel-indicators {bottom:-180px;} #content-testimonials .carousel-indicators li img{height:30%;} #content-testimonials .carousel-indicators li.active img{height:40%;}}
+
+/* Section: Global */
+.card{ border:2px #eee solid; background:#fff; padding:1.25em; border-radius:0;}
+.card p{font-size:.85em!important; color:#afafaf;}
+.hr-border{border-top:2px dotted #eee!important; margin-top:0;}
+
+/* Section: Gallery */
+#content-gallery{margin:4em 0; padding:3em; background-color: #464646; background-image: url("img/black-thread.png");}
+
+/* Section: Contact */
+#content-contact input, #content-contact textarea, #content-contact select {font-style:italic; color:#afafaf;}
+
+/* Footer */
+footer {background:#3a3a3a; margin-top:50px; padding:10px 0;}
+footer .container {color:#7d7d7d!important; font-family:'Roboto Slab', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'!important;}
+footer .container h3, footer .container h4 {color:#7d7d7d; font-family:'Roboto Slab', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'!important;}
+
+footer .container a {color:#fff;}
+footer .container a:hover {text-decoration:none;}
+footer .container a:hover{color:#fff; background-color:transparent;}
+
+footer .container li{margin-left:1.5em;}
+footer .container li:after{content:"\2022"; font-size:2em; color:#fff; text-shadow: rgba( 0, 0, 0, .25 ) .045em .045em!important; position:absolute; margin-top:-.35em; margin-left:.5em; }
+footer .container li:last-child:after{content:none;}
+
+
+  

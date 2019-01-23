@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Single Page Scroller BSV4</title>
+ 	
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="https://github.com/jvining">
+	<meta name="description" content="A single page demo site with scroll to nav and destination offset, Testimonails Carousel, FancyBox Gallery, and AJAX contact form. Built with Bootstrap 4, Jquery 3.3.1, FancyBox, & Google Web Fonts">
+
+	<!-- Open Graph -->
+ 	<meta property="og:title" content="Single Page Scroller BSV4">
+	<meta property="og:url" content="https://jvining.github.io/single-page-scroller-bsv4">
+	<meta property="og:description" content="A single page demo site with scroll to nav and destination offset, Testimonails Carousel, FancyBox Gallery, and AJAX contact form. Built with Bootstrap 4, Jquery 3.3.1, FancyBox, & Google Web Fonts">
+	<meta property="og:image:url" content="https://place-hold.it/600x315/a2c046/fff/000?text=Single%20Page%20Scroller">
+ 
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+ 	<link href="css/open-sans.css" rel="stylesheet" type="text/css">
+	<link href="css/roboto-slab.css" rel="stylesheet" type="text/css">
+  	<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+   
+	<div class="container-fluid container-button">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-11 mt-3">
+					<ul class="list-unstyled list-inline pull-right">
+					 	<li class="list-inline-item d-none d-md-inline"><i class="fa fa-home" aria-hidden="true"></i> New York, N.Y. 12345</li>
+					 	<li class="list-inline-item"><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:123-456-7890">(123) 456-7890</a></li>
+					 	<li class="list-inline-item d-inline"><i class="fa fa-clock-o" aria-hidden="true"></i> Mon-Fri: 09:00 - 5:00</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	 	
+	<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+ 	  <div class="container">
+		  <a class="navbar-brand scroll" href="#header" data-offset="220">
+		  	<img alt="img" class="img-fluid rounded-circle mx-auto" src="https://picsum.photos/170/170/?random">
+		  </a>
+	  	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+	  	    <span class="navbar-toggler-icon"></span>
+	  	  </button>
+	   	  <div class="collapse navbar-collapse" id="navbarsExample05">
+	  	    <ul class="navbar-nav mx-auto">
+	  			<li class="nav-item"><a class="nav-link scroll" data-offset="220" href="#content-about">About</a></li>
+	  			<li class="nav-item"><a class="nav-link scroll" data-offset="200" href="#content-testimonials">Testimonials</a></li>
+	  			<li class="nav-item"><a class="nav-link scroll" data-offset="200" href="#content-services">Services</a></li>
+	  			<li class="nav-item"><a class="nav-link scroll" data-offset="130" href="#content-gallery">Projects</a></li>
+	  			<li class="nav-item"><a class="nav-link scroll" data-offset="150" href="#content-contact">Contact</a></li>
+	  	    </ul>
+	  	  </div>
+	  </div>
+	</nav>
+ 	
+	<header id="header">
+		<div class="jumbotron jumbotron-fluid d-flex justify-content-center">
+			<div class="row d-flex align-items-center">
+				<div class="col-md-12 p-5">
+					<div class="row">
+						<div class="col-12 text-center">
+							<h1 class="fa-4x text-white text-shadow">Single Page Scroller <span class="text-green">BSV4</span></h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8 offset-md-2 text-center">
+							<p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+  						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 offset-md-2 col-sm-12 mt-2"><a href="#" class="btn btn-site btn-xl btn-block">Download Agenda</a></div>
+						<div class="col-md-4 col-sm-12 mt-2"><a href="#" class="btn btn-site btn-xl btn-block">Download Attendee List</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div  id="content-container">
+		
+		<div class="container-fluid mt-0 mb-5 py-2" id="content-discount">
+			<div class="container">
+				<div class="row d-flex align-items-center p-4">
+					<div class="col-md-9 order-xs-2">
+						<div class="row">
+							<h3 class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut: <span class="text-bold">labore et</span></h3>
+						</div>
+					</div>
+					<div class="col-md-3  order-xs-1">
+						<a href="#" class="btn btn-dark btn-lg btn-block">Learn More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+ 	
+		<div class="container my-5" id="content-about">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="card mt-2">
+						<h2 class="text-green">Single Page Scroller BSV4 <br> <span class="text-grey small">Lorem ipsum dolor sit amet</span> </h2>
+						<hr class="hr-border">
+						<p class="text-justify">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<img class="img-fluid rounded mx-auto mt-2" alt="img" src="https://picsum.photos/650/350/?random">
+				</div>
+			</div>
+		</div>
+	
+		<div class="container-fluid my-5 pt-md-3" id="content-testimonials">
+			<div class="row pt-md-1">
+				<div class="col-md-12">
+					<div id="demo" class="carousel slide" data-ride="carousel">
+					  	<ul class="carousel-indicators">
+					  	  <li data-target="#demo" data-slide-to="0" class="active"> <img class="img-fluid rounded-circle img-thumbnail mx-auto" src="https://picsum.photos/125/125/?random" alt="img"></li>
+					  	  <li data-target="#demo" data-slide-to="1"><img class="img-fluid rounded-circle img-thumbnail mx-auto" src="https://picsum.photos/124/125/?random" alt="img"></li>
+					  	  <li data-target="#demo" data-slide-to="2"><img class="img-fluid rounded-circle img-thumbnail mx-auto" src="https://picsum.photos/125/124/?random" alt="img"></li>
+					  	</ul>
+	 					<div class="carousel-inner  ">
+							<div class="carousel-item active align-items-center flex-column p-4">
+								<div class="col-md-10 offset-md-1 text-center">
+									<blockquote>
+										<p class="text-white"><em>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</em> </p>
+										<cite class="pull-right fa-1x text-white text-accent text-light">Lorem ipsum dolor sit amet</cite>
+									</blockquote>
+								</div>	
+							</div>
+							<div class="carousel-item align-items-center flex-column p-4">
+								<div class="col-md-10 offset-md-1 text-center">
+									<blockquote>
+										<p class="text-white"><em>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</em> </p>
+										<cite class="pull-right fa-1x text-white text-accent text-light">Lorem ipsum dolor sit amet</cite>
+									</blockquote>
+								</div>	
+							</div>
+							<div class="carousel-item align-items-center flex-column p-4">
+								<div class="col-md-10 offset-md-1 text-center">
+									<blockquote>
+										<p class="text-white"><em>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</em> </p>
+										<cite class="pull-right fa-1x text-white text-accent text-light">Lorem ipsum dolor sit amet</cite>
+									</blockquote>
+								</div>	
+							</div>
+						</div> 
+						 <a class="carousel-control-prev" href="#demo" data-slide="prev"></a> 
+						 <a class="carousel-control-next" href="#demo" data-slide="next"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="container my-5" id="content-services">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="fa-3x">Why <span class="text-green">Choose Us?</span></h2>
+					<hr class="hr-border"/>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-md-4 mt-2">
+					<div class="card">
+						<h4 class="text-grey-dk"><i class="fa fa-lg fa-leaf text-green" aria-hidden="true"></i> &nbsp; Specialized Company</h4>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+					</div>	
+				</div>
+				<div class="col-md-4 mt-2">
+					<div class="card">
+						<h4 class="text-grey-dk"><i class="fa fa-lg fa-check-circle-o text-green" aria-hidden="true"></i> &nbsp; Licensed & Insured</h4>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+					</div>	
+				</div>
+				<div class="col-md-4 mt-2">
+					<div class="card">
+						<h4 class="text-grey-dk"><i class="fa fa-lg fa-tachometer text-green" aria-hidden="true"></i> &nbsp;  Dependable Services</h4>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+					</div>	
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-md-4 mt-2">
+					<div class="card">
+						<h4 class="text-grey-dk"><i class="fa fa-lg fa-calendar-o text-green" aria-hidden="true"></i> &nbsp; Day Scheduling</h4>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+					</div>	
+				</div>
+				<div class="col-md-4 mt-2">
+					<div class="card">
+						<h4 class="text-grey-dk"><i class="fa fa-lg fa-comments-o text-green" aria-hidden="true"></i> &nbsp; Free Consultations</h4>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+					</div>	
+				</div>
+				<div class="col-md-4 mt-2">
+					<div class="card">
+						<h4 class="text-grey-dk"><i class="fa fa-lg fa-trophy text-green" aria-hidden="true"></i> &nbsp;  Reputable Company</h4>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+					</div>	
+				</div>
+			</div>
+		</div>
+	
+		<div class="container-fluid my-5" id="content-gallery">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="fa-3x text-white"><span class="text-green">Project </span>Galleries</h2>
+				 	</div>
+			 	</div>
+				<div class="row mt-2">
+					<div class="col-md-3 col-sm-6 mt-2">
+						<a href="https://picsum.photos/1500/1100?image=12" data-fancybox="images">
+							<img class="img-fluid rounded mx-auto" alt="img" src="https://picsum.photos/250/130?image=12"/>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 mt-2">
+						<a href="https://picsum.photos/1500/1100?image=22" data-fancybox="images">
+							<img class="img-fluid rounded mx-auto" alt="img" src="https://picsum.photos/250/130?image=22"/>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 mt-2">
+						<a href="https://picsum.photos/1500/1100?image=32" data-fancybox="images">
+							<img class="img-fluid rounded mx-auto" alt="img" src="https://picsum.photos/250/130?image=32"/>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 mt-2">
+						<a href="https://picsum.photos/1500/1100?image=42" data-fancybox="images">
+							<img class="img-fluid rounded mx-auto" alt="img" src="https://picsum.photos/250/130?image=42"/>
+						</a>
+					</div>
+				</div>
+				<div class="row mt-2">
+					<div class="col-md-3 col-sm-6 mt-2">
+						<a href="https://picsum.photos/1500/1100?image=18" data-fancybox="images">
+							<img class="img-fluid rounded mx-auto" alt="img" src="https://picsum.photos/250/130?image=18"/>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 mt-2">
+						<a href="https://picsum.photos/1500/1100?image=28" data-fancybox="images">
+							<img class="img-fluid rounded mx-auto" alt="img" src="https://picsum.photos/250/130?image=28"/>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 mt-2">
+						<a href="https://picsum.photos/1500/1100?image=38" data-fancybox="images">
+							<img class="img-fluid rounded mx-auto" alt="img" src="https://picsum.photos/250/130?image=38"/>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 mt-2">
+						<a href="https://picsum.photos/1500/1100?image=48" data-fancybox="images">
+							<img class="img-fluid rounded mx-auto" alt="img" src="https://picsum.photos/250/130?image=48"/>
+						</a>
+					</div>
+				</div>
+				<div class="row mt-2 mb-2">
+					<div class="col-md-3 col-sm-6 mt-2">
+						<a href="https://picsum.photos/1500/1100?image=15" data-fancybox="images">
+							<img class="img-fluid rounded mx-auto" alt="img" src="https://picsum.photos/250/130?image=15"/>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 mt-2">
+						<a href="https://picsum.photos/1500/1100?image=25" data-fancybox="images">
+							<img class="img-fluid rounded mx-auto" alt="img" src="https://picsum.photos/250/130?image=25"/>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 mt-2">
+						<a href="https://picsum.photos/1500/1100?image=35" data-fancybox="images">
+							<img class="img-fluid rounded mx-auto" alt="img" src="https://picsum.photos/250/130?image=35"/>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 mt-2">
+						<a href="https://picsum.photos/1500/1100?image=45" data-fancybox="images">
+							<img class="img-fluid rounded mx-auto" alt="img" src="https://picsum.photos/250/130?image=45"/>
+						</a>
+					</div>
+				</div>
+ 			</div>
+		</div>
+		
+ 		<div class="container my-5" id="content-contact">
+			 <div class="row ">
+				<div class="col-md-6 p-2 py-2">
+					<h2 class="fa-2x">Find Out More<span class="text-green"> <br> and How to Get Started</span></h2>
+					<hr class="hr-border"/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<p>Duis laboris nisi ut aliquip ex ea commodo consequat aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+ 				</div>
+				<div class="col-md-6 p-2">
+				   <div class="card p-3">
+						<form class="contact_form" method="post" action="mail.php">
+							<div class="row">
+								<div class="col-12">
+									<div class="form-group">
+										<label for="exampleFormControlInput1">Name</label> 
+										<input class="form-control" id="exampleFormControlInput1" placeholder="Your Name" type="email">
+									</div>
+								</div>
+							</div>
+	 						<div class="row">
+	 							 <div class="col-md-6">
+									<label for="inlineFormInputGroup">Email</label>
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<div class="input-group-text">
+												<i class="fa fa-envelope" aria-hidden="true"></i>
+											</div>
+									    </div>
+										<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="John@doe.com">
+									</div>
+	 							</div>
+	 							 <div class="col-md-6">
+									<label for="inlineFormInputGroup">Phone</label>
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<div class="input-group-text">
+												<i class="fa fa-phone" aria-hidden="true"></i>
+											</div>
+									    </div>
+										<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="+1 (555) 123-456-7890">
+									</div>
+	 							</div>
+	 						</div>
+						
+							<div class="form-group">
+								<label for="exampleFormControlSelect1">Subject</label> 
+								<select class="form-control" id="exampleFormControlSelect1">
+									<option value="" disabled="" selected="">What can we help you with ?</option>
+									<option value="Website Inquiry: How to organize your VHS collection">How to organize your VHS collection</option>
+									<option value="Website Inquiry: Coffee's for closers">Coffee's for closers, and how you can be one!</option>
+									<option value="Website Inquiry: Since we can't all win the lottery">Since we can't all win the lottery</option>
+									<option value="Website Inquiry: Don't invite Steve to that meeting. He'll dress like a ghost">Don't invite Steve to that meeting. He'll dress like a ghost</option>
+									<option value="Website Inquiry: Where to Drink Beer Right Now">Where to Drink Beer Right Now</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlTextarea1">Message</label> 
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placehlder="Your Message here"></textarea>
+							</div>
+						</form>
+					</div>
+	 			</div>
+			</div>
+		</div>
+ 	
+	</div>
+	
+	<footer>
+		<div class="container">
+			<div class="row mt-3">
+				<div class="col-md-6">
+					<h4>Single Page Scroller BSV4 &copy; 2019</h3>
+					<p>Phone: <a href="tel:123-456-7890">(123) 456-7890</a></p>
+				</div>
+				<div class="col-md-6 voffset0">
+					<ul class="list-inline mt-2">
+						<li class="list-inline-item"><a class="scroll" data-offset="220" href="#content-about">About</a></li>
+						<li class="list-inline-item"><a class="scroll" data-offset="200" href="#content-testimonials">Testimonials</a></li>
+						<li class="list-inline-item"><a class="scroll" data-offset="200" href="#content-services">Services</a></li>
+						<li class="list-inline-item"><a class="scroll" data-offset="130" href="#content-gallery">Projects</a></li>
+						<li class="list-inline-item"><a class="scroll" data-offset="150" href="#content-contact">Contact</a></li>
+					</ul>
+  				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- JS -->
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/popper.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.fancybox.min.js" type="text/javascript"></script>
+	<script src="js/scripts.js" type="text/javascript"></script>
+ 
+</body>
+</html>
