@@ -1,9 +1,9 @@
 /*
-Theme Name: Single Page Scroller 
+Theme Name: Single Page Scroller BSV4
 Theme URI: https://jvining.github.io/single-page-scroller-v4
 Author: Joshua Vining
 Author URI: https://github.com/jvining
-Description: A single page scrolling web site with 
+Description: A single page demo site with scroll to nav and destination offset, Testimonails Carousel, FancyBox Gallery, and AJAX contact form. Built with Bootstrap 4, Jquery 3.3.1, FancyBox, & Google Web Fonts 
 Version: 2.0
 Texture Credit: https://www.transparenttextures.com/
 */
@@ -45,7 +45,7 @@ body h1, body h2, body h3, body h4, body h5 {color:#464646; font-family:'Roboto 
 @media(max-width:450px){.btn-xl,.btn-lg,.btn-md,.btn-sm,.btn-xs{font-size:1em!important;}}
 
 /* Hero Image Section */
-.jumbotron{background: url(https://picsum.photos/1500/650/?random) center center no-repeat #ddd; box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .4); margin-top:3em; height:70vh; min-height:450px; margin-bottom:0px;  background-size:cover;}
+.jumbotron{background: url(https://picsum.photos/1500/650/?random) center center no-repeat #eee; box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .4); margin-top:3em; height:70vh; min-height:450px; margin-bottom:0px;  background-size:cover;}
 @media(max-width:768px){.jumbotron h1{font-size:2em!important;} .jumbotron p{font-size:1em!important;}}
 
 /* Navigation */
@@ -89,18 +89,17 @@ body .navbar .navbar-nav > li:first-child:after{content:none;}
 #content-testimonials .carousel-indicators li img{height:70%;opacity:.35;transition:all .4s ease-in;}
 #content-testimonials .carousel-indicators li.active img{height: 90%;opacity:1;transition:all .4s ease-in;}
 @media(max-width:1100px){#content-testimonials blockquote p {font-size:1.75em;} #content-testimonials .carousel-indicators {bottom:-200px;} #content-testimonials .carousel-indicators li img{height:70%;} #content-testimonials .carousel-indicators li.active img{height:70%;}}
-@media(max-width:550px){#content-testimonials {min-height:450px;} #content-testimonials blockquote p {font-size:1.25em;} #content-testimonials .carousel-indicators {bottom:-180px;} #content-testimonials .carousel-indicators li img{height:30%;} #content-testimonials .carousel-indicators li.active img{height:40%;}}
+@media(max-width:550px){#content-testimonials {min-height:450px;} #content-testimonials blockquote p {font-size:1.25em;} #content-testimonials .carousel-indicators {bottom:-180px;} #content-testimonials .carousel-indicators li img{height:30%;} #content-testimonials .carousel-indicators li.active img{height: 30%;}}
 
 /* Section: Global */
 .card{ border:2px #eee solid; background:#fff; padding:1.25em; border-radius:0;}
 .card p{font-size:.85em!important; color:#afafaf;}
 .hr-border{border-top:2px dotted #eee!important; margin-top:0;}
+label{color:#5f5f5f; font-family:'Roboto Slab', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'!important;}
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="phone"]:focus, input[type="color"]:focus, .uneditable-input:focus, .form-control:focus {border-color: rgba(162, 192, 70, .8); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(162, 192, 70, .8); outline: 0 none;}
 
 /* Section: Gallery */
 #content-gallery{margin:4em 0; padding:3em; background-color: #464646; background-image: url("img/black-thread.png");}
-
-/* Section: Contact */
-#content-contact input, #content-contact textarea, #content-contact select {font-style:italic; color:#afafaf;}
 
 /* Footer */
 footer {background:#3a3a3a; margin-top:50px; padding:10px 0;}
@@ -114,6 +113,3 @@ footer .container a:hover{color:#fff; background-color:transparent;}
 footer .container li{margin-left:1.5em;}
 footer .container li:after{content:"\2022"; font-size:2em; color:#fff; text-shadow: rgba( 0, 0, 0, .25 ) .045em .045em!important; position:absolute; margin-top:-.35em; margin-left:.5em; }
 footer .container li:last-child:after{content:none;}
-
-
-  
